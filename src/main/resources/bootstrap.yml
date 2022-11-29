@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: vtswebapigateway
+---
+spring:
+  profiles:
+    - local
+  cloud:
+    config:
+      uri: http://127.0.0.1:8889
+      ## Habilitar ou Não o Spring Cloud Config Client (False = desabilita)
+      enabled: true
+
+---
+spring:
+  profiles:
+    - dev
+  cloud:
+    config:
+      uri: http://127.0.0.1:8889
+      ## Habilitar ou Não o Spring Cloud Config Client (False = desabilita)
+      enabled: true
