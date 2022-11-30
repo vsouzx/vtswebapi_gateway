@@ -11,7 +11,7 @@ public class VtswebapiGatewayApplication {
 
 	public static void main(String[] args) {
 		new SpringApplicationBuilder(VtswebapiGatewayApplication.class)
-				.web(WebApplicationType.NONE)
+				.web(WebApplicationType.REACTIVE)
 				.run(args);
 	}
 
